@@ -1,0 +1,6 @@
+<button mat-icon-button aria-label="Example icon-button with heart icon" class="header-button"
+  [class.active]="rla.isActive">
+  <mat-icon class="header-icon" routerLinkActive="active" #rla="routerLinkActive" [routerLink]="to"
+    [routerLinkActiveOptions]="{exact:true}">
+    {{ icon }}</mat-icon>
+</button>

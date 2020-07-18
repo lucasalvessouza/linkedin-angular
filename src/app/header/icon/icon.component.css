@@ -1,0 +1,26 @@
+.header-button {
+  height: 100%;
+  outline: none!important;
+}
+
+*:focus {
+  outline: none!important;
+}
+
+.header-icon {
+  transform: scale(1.2);
+  color: rgb(206, 206, 206);
+}
+
+.header-icon:hover {
+  color: #fff
+}
+
+.header-icon.active {
+  color: #fff!important
+}
+
+.header-button.active {
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+}

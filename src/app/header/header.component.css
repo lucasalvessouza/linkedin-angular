@@ -1,0 +1,27 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+header {
+  background: #283e4a;
+}
+
+.toolbar {
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.toolbar > .mat-toolbar {
+  background: transparent;
+}
+
+.header-link {
+  height: 100%;
+  margin-right: 20px;
+}

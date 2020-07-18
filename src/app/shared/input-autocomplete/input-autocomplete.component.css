@@ -1,0 +1,15 @@
+.la-input-autocomplete {
+  height: 34px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.la-input-autocomplete > input {
+  height: 100%;
+  position: absolute;
+  background-color: #e1e9ee;
+  border: none;
+  border-radius: 2px;
+  border-color: #e1e9ee;
+  padding: 1px 10px;
+}
