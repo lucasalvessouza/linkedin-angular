@@ -1,5 +1,6 @@
 .home-card-left {
   width: 216px;
+  margin-bottom: 20px;
 }
 
 .home-card {
@@ -52,4 +53,19 @@
   color:#0073b1;
   font-weight: 600;
   float: right;
+}
+
+.tag {
+  margin-bottom: 5px;
+}
+
+.tag > .tag-icon{
+  color: rgba(0,0,0,.6);
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.tag > .tag-name{
+  color: rgba(0,0,0,.6);
+  font-weight: 500;
 }
