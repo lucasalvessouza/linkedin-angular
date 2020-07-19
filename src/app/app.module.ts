@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatInputModule } from '@angular/material/input'
 import { MatCardModule } from '@angular/material/card'
+import { MatDividerModule } from '@angular/material/divider'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,6 +44,7 @@ import { AvatarComponent } from './shared/avatar/avatar.component'
     MatAutocompleteModule,
     MatInputModule,
     MatCardModule,
+    MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)

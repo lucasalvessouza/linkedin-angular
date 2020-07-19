@@ -3,7 +3,7 @@
 }
 
 .home-card {
-  height: 700px;
+  height: 300px;
 }
 
 .home-card-img {
@@ -18,6 +18,7 @@
   top: 68px;
   background: white;
   height: 70%;
+  width: 95.5%;
 }
 
 .home-card-title {
@@ -30,4 +31,25 @@
 
 .home-card-title > p {
   color: rgba(0,0,0,.6);
+}
+
+.home-card-info {
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.home-card-info-row {
+  margin-bottom: 30px;
+}
+
+.home-card-info-row > .description {
+  color: rgba(0,0,0,.6);
+  font-weight: 600;
+  float: left;
+}
+
+.home-card-info-row > .number {
+  color:#0073b1;
+  font-weight: 600;
+  float: right;
 }
