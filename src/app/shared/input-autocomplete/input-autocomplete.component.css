@@ -6,6 +6,7 @@
 
 .la-input-autocomplete > input {
   height: 100%;
+  width: 235px;
   position: absolute;
   background-color: #e1e9ee;
   border: none;

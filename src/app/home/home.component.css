@@ -1,0 +1,33 @@
+.home-card-left {
+  width: 216px;
+}
+
+.home-card {
+  height: 700px;
+}
+
+.home-card-img {
+ text-align: center;
+}
+
+.home-card-content {
+  position: absolute;
+  z-index: 1000;
+  padding: 5px;
+  left: 0px;
+  top: 68px;
+  background: white;
+  height: 70%;
+}
+
+.home-card-title {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2px;
+  position: relative;
+}
+
+.home-card-title > p {
+  color: rgba(0,0,0,.6);
+}

@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatInputModule } from '@angular/material/input'
+import { MatCardModule } from '@angular/material/card'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 
 import { ROUTES } from './app.routes';
-import { PeopleComponent } from './people/people.component'
+import { PeopleComponent } from './people/people.component';
+import { AvatarComponent } from './shared/avatar/avatar.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { PeopleComponent } from './people/people.component'
     InputAutocompleteComponent,
     IconComponent,
     HomeComponent,
-    PeopleComponent
+    PeopleComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { PeopleComponent } from './people/people.component'
     MatFormFieldModule,
     MatAutocompleteModule,
     MatInputModule,
+    MatCardModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
