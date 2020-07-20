@@ -1,0 +1,50 @@
+.feed-create {
+  width: 100%;
+  position: absolute;
+}
+
+.feed-create-button {
+  background-color: transparent!important;
+  color: rgba(0,0,0,.6);
+  border: none;
+  margin: 8px 16px 8px 0;
+  padding: 0 12px;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: none;
+  text-align: left;
+}
+
+.feed-create-button:focus {
+  outline: none;
+}
+
+.feed-create-button:hover{
+  cursor: pointer;
+  color: #000!important;
+}
+
+.feed-create-button > mat-icon {
+  font-size: 1.2rem;
+  color: rgba(0,0,0,.6);
+}
+
+.feed-create-divider {
+  width: 98%;
+  margin: 8px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feed-create-divider > mat-divider{
+  position: relative;
+}
+
+.feed-create-actions {
+  width: 100%;
+  margin-top: 20px;
+}
+.feed-create-actions > button {
+  margin-right: 8.5%;
+  margin-left: 8.5%;
+}
