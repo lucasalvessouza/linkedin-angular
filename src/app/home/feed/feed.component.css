@@ -3,6 +3,12 @@
   position: absolute;
 }
 
+.feed-card-timeline {
+  width: 100%;
+  position: absolute;
+  margin-top: 30px;
+}
+
 .feed-create-button {
   background-color: transparent!important;
   color: rgba(0,0,0,.6);
@@ -47,4 +53,17 @@
 .feed-create-actions > button {
   margin-right: 8.5%;
   margin-left: 8.5%;
+}
+
+.button-purple {
+  background-color: #9896f2;
+}
+.button-blue {
+  background-color: #33aada;
+}
+.button-green {
+  background-color: #17afb8;
+}
+.button-orange {
+  background-color: #ef7e37;
 }

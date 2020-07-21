@@ -1,0 +1,36 @@
+.feed-card-post {
+  margin-bottom: 10px;
+}
+
+.feed-card-post-related {
+  float: left;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.feed-card-post-related > #name{
+  font-weight: 600;
+  color: rgba(0,0,0,.9);
+  margin-right: 5px;
+}
+
+.feed-card-post-related > #action{
+  color: rgba(0,0,0,.6);
+}
+
+.feed-card-post-more {
+  float: right;
+  color: rgba(0,0,0,.6);
+}
+
+.feed-card-post-more:hover {
+  color: #000;
+}
+
+.feed-card-post-header {
+  width: 100%;
+  height: 40px;
+}
+

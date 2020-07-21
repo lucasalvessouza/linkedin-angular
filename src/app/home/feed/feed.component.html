@@ -10,20 +10,22 @@
           <mat-divider></mat-divider>
         </div>
         <div class="feed-create-actions">
-          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <button mat-mini-fab matTooltip="Photo" class="button-blue" aria-label="Upload a photo">
             <mat-icon>camera_alt</mat-icon>
           </button>
-          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <button mat-mini-fab matTooltip="Video" class="button-purple" aria-label="Upload a video">
             <mat-icon>movie</mat-icon>
           </button>
-          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <button mat-mini-fab matTooltip="Document" class="button-green" aria-label="Upload a document">
             <mat-icon>assignment</mat-icon>
           </button>
-          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <button mat-mini-fab matTooltip="Write a article" class="button-orange" aria-label="Write an article">
             <mat-icon>chrome_reader_mode</mat-icon>
           </button>
         </div>
       </div>
     </mat-card-content>
   </mat-card>
-</div>
+  <div class="feed-card-timeline">
+    <la-feed-post></la-feed-post>
+  </div>

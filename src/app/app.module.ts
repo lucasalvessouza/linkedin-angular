@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input'
 import { MatCardModule } from '@angular/material/card'
 import { MatDividerModule } from '@angular/material/divider'
 import { MatGridListModule } from '@angular/material/grid-list'
+import { MatTooltipModule } from '@angular/material/tooltip'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +24,8 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { PeopleComponent } from './people/people.component';
 import { AvatarComponent } from './shared/avatar/avatar.component';
-import { FeedComponent } from './home/feed/feed.component'
+import { FeedComponent } from './home/feed/feed.component';
+import { FeedPostComponent } from './home/feed-post/feed-post.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { FeedComponent } from './home/feed/feed.component'
     HomeComponent,
     PeopleComponent,
     AvatarComponent,
-    FeedComponent
+    FeedComponent,
+    FeedPostComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { FeedComponent } from './home/feed/feed.component'
     MatCardModule,
     MatDividerModule,
     MatGridListModule,
+    MatTooltipModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
