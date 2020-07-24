@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'la-feed-post',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed-post.component.css']
 })
 export class FeedPostComponent implements OnInit {
+
+  @Input() post
 
   constructor() { }
 

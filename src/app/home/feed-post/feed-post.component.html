@@ -1,14 +1,15 @@
 <mat-card class="feed-card-post">
   <div class="feed-card-post-header">
-    <div class="feed-card-post-related">
-      <span id="name">Fulano de tal</span>
-      <span id="action">likes this</span>
-    </div>
-    <button mat-icon-button class="feed-card-post-more" aria-label="Example icon button with a vertical three dot icon">
+    <a href="" class="feed-card-post-more">
       <mat-icon>more_horiz</mat-icon>
-    </button>
+    </a>
   </div>
   <mat-divider></mat-divider>
+
+  <div class="feed-card-post-related" *ngIf="post.related">
+    <span id="name">{{ post.related.name }}</span>
+    <span id="action">{{ post.related.action }} this</span>
+  </div>
   <mat-card-content>
     <div>
 

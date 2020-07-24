@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
+  posts: any[] = [
+    {
+      related: {
+        name: 'Fulano de tal',
+        action: 'like'
+      }
+    },
+    {
+      related: {
+        name: 'Outro Fulano',
+        action: 'comments'
+      }
+    },
+    {
+      related: null
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

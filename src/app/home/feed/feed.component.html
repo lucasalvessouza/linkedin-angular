@@ -27,5 +27,5 @@
     </mat-card-content>
   </mat-card>
   <div class="feed-card-timeline">
-    <la-feed-post></la-feed-post>
+    <la-feed-post *ngFor="let post of posts" [post]="post"></la-feed-post>
   </div>

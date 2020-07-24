@@ -89,6 +89,7 @@
 .home-col-center {
   width: 600px!important;
   /* background-color: blue; */
+  height: 100%;
   left: calc((22.2033% - 0.556667px + 1px) * 1)!important;
 }
 
