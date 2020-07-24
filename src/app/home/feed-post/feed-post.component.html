@@ -4,12 +4,14 @@
       <mat-icon>more_horiz</mat-icon>
     </a>
   </div>
-  <mat-divider></mat-divider>
+
 
   <div class="feed-card-post-related" *ngIf="post.related">
     <span id="name">{{ post.related.name }}</span>
     <span id="action">{{ post.related.action }} this</span>
   </div>
+
+  <mat-divider *ngIf="post.related"></mat-divider>
   <mat-card-content>
     <div>
 
