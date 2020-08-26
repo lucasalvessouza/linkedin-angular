@@ -12,9 +12,15 @@
   </div>
 
   <mat-divider *ngIf="post.related"></mat-divider>
-  <mat-card-content>
-    <div>
-
+  <mat-card-content class="feed-card-post-content" [ngStyle]="{'margin-top': post.related ? '20px' : '0px'}">
+    <div class="feed-card-post-content-actor">
+      <div>
+        <la-avatar size="60" img="assets/img/profile.png"></la-avatar>
+      </div>
+      <div class="feed-card-post-content-actor-name">
+        <span class="mat-body-strong">{{ post.actor.name }}</span>
+        <span class="mat-caption-small">{{ post.actor.description }}</span>
+      </div>
     </div>
   </mat-card-content>
 </mat-card>

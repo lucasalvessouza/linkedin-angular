@@ -39,3 +39,18 @@
   color: #000;
 }
 
+.feed-card-post-content {
+  padding: 0px 10px;
+}
+
+.feed-card-post-divider {
+  padding-bottom: 10px;
+}
+
+.feed-card-post-content-actor {
+  display: flex!important;
+}
+
+.feed-card-post-content-actor-name {
+  margin: 7px 7px;
+}
