@@ -1,57 +1,49 @@
 <div class="home-content">
-  <mat-grid-list cols="3" rowHeight="4:3.6">
-    <mat-grid-tile class="home-col-left">
-      <div class="home-card-left">
-        <mat-card class="home-card">
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu">
-          <mat-card-content class="home-card-content">
-            <div class="home-card-img">
-              <la-avatar size="90" img="assets/img/profile.png" [shadow]="true"></la-avatar>
+  <div class="home-col-left">
+    <div class="home-card-left">
+      <mat-card class="home-card">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content class="home-card-content">
+          <div class="home-card-img">
+            <la-avatar size="90" img="assets/img/profile.png" [shadow]="true"></la-avatar>
+          </div>
+          <div class="home-card-title">
+            <span class="mat-title">Lucas Alves</span>
+            <p class="mat-small">Fullstack developer | Rock Content</p>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="home-card-info">
+            <div class="home-card-info-row">
+              <span class="description mat-small">Who viewed your profile</span>
+              <span class="number mat-small">99</span>
             </div>
-            <div class="home-card-title">
-              <span class="mat-title">Lucas Alves</span>
-              <p class="mat-small">Fullstack developer | Rock Content</p>
-            </div>
-            <mat-divider></mat-divider>
-            <div class="home-card-info">
-              <div class="home-card-info-row">
-                <span class="description mat-small">Who viewed your profile</span>
-                <span class="number mat-small">99</span>
-              </div>
-              <div class="home-card-info-row">
-                <span class="description mat-small">Views of your post</span>
-                <span class="number mat-small">547</span>
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile class="home-col-center">
-      <la-feed></la-feed>
-    </mat-grid-tile>
-    <mat-grid-tile class="home-col-right">3</mat-grid-tile>
-    <mat-grid-tile class="home-col-left">
-      <div class="home-card-left">
-        <mat-card class="home-card-tags">
-          <div class="tags-group">
-            <p class="mat-small">Recent</p>
-            <div class="tag" *ngFor="let tag of tags">
-              <span class="tag-icon">#</span>
-              <span class="tag-name">{{tag}}</span>
+            <div class="home-card-info-row">
+              <span class="description mat-small">Views of your post</span>
+              <span class="number mat-small">547</span>
             </div>
           </div>
-          <div class="tags-group">
-            <p class="mat-small card-title-blue">Recent</p>
-            <div class="tag" *ngFor="let tag of recentTags">
-              <span class="tag-icon">#</span>
-              <span class="tag-name">{{tag}}</span>
-            </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="home-card-tags">
+        <div class="tags-group">
+          <p class="mat-small">Recent</p>
+          <div class="tag" *ngFor="let tag of tags">
+            <span class="tag-icon">#</span>
+            <span class="tag-name">{{tag}}</span>
           </div>
-        </mat-card>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
-
+        </div>
+        <div class="tags-group">
+          <p class="mat-small card-title-blue">Recent</p>
+          <div class="tag" *ngFor="let tag of recentTags">
+            <span class="tag-icon">#</span>
+            <span class="tag-name">{{tag}}</span>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="home-col-center">
+    <la-feed></la-feed>
+  </div>
+  <div class="home-col-right">teste</div>
 </div>

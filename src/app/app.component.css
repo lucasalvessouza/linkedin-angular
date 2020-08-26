@@ -12,4 +12,5 @@
   margin: 60px auto 32px;
   padding: 0 16px;
   max-width: 1130px;
+  min-width: 1130px!important;
 }

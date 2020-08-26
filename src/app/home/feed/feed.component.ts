@@ -16,8 +16,9 @@ export class FeedComponent implements OnInit {
       actor: {
         name: 'John Dere',
         description: 'Fullstack Developer',
-        hours: 3
-      }
+        time: '3h'
+      },
+      reactions: ['love', 'celebrate']
     },
     {
       related: {
@@ -27,16 +28,18 @@ export class FeedComponent implements OnInit {
       actor: {
         name: 'Luke Skywalker',
         description: 'Recruiting, Global Product at Facebook',
-        hours: 11
-      }
+        time: '11h'
+      },
+      reactions: ['like', 'love', 'interesting']
     },
     {
       related: null,
       actor: {
         name: 'Mary Jane',
         description: 'QA at Google',
-        hours: 11
-      }
+        time: '11h'
+      },
+      reactions: ['love']
     }
   ]
 

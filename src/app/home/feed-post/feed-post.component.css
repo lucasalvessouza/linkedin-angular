@@ -1,5 +1,10 @@
+.feed-padding {
+  padding: 10px 15px 0px!important;
+}
+
 .feed-card-post {
-  margin-bottom: 10px;
+  margin: 15px 0px;
+  padding: 0px!important;
 }
 
 .feed-card-post-related {
@@ -39,10 +44,6 @@
   color: #000;
 }
 
-.feed-card-post-content {
-  padding: 0px 10px;
-}
-
 .feed-card-post-divider {
   padding-bottom: 10px;
 }
@@ -52,5 +53,44 @@
 }
 
 .feed-card-post-content-actor-name {
-  margin: 7px 7px;
+  margin: 7px 7px 0px;
+}
+
+.feed-card-post-content-actor-description {
+  margin: -3px 7px 0px;
+}
+
+.feed-card-post-content-actor-description > span {
+  color: rgba(0,0,0,.6);
+}
+
+.feed-card-post-content-actor-time {
+  color: rgba(0,0,0,.6);
+  margin: -3px 7px 0px;
+}
+
+.feed-card-post-content-actor-time > mat-icon {
+  font-size: 16px;
+  padding-left: 4px;
+}
+
+
+.feed-post-content-body {
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.feed-post-content-media {
+  margin-top: 10px;
+  height: 310px;
+  width: 100%;
+}
+
+.feed-post-content-media > img {
+  height: 100%;
+  width: 100%;
+}
+
+.feed-post-content-reactions {
+  margin: 10px 0px;
 }

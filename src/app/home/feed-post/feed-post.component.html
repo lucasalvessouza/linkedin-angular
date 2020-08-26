@@ -1,26 +1,49 @@
 <mat-card class="feed-card-post">
-  <div class="feed-card-post-header">
+  <div class="feed-card-post-header feed-padding">
     <a href="" class="feed-card-post-more">
       <mat-icon>more_horiz</mat-icon>
     </a>
   </div>
 
-
-  <div class="feed-card-post-related" *ngIf="post.related">
+  <div class="feed-card-post-related feed-padding" *ngIf="post.related">
     <span id="name">{{ post.related.name }}</span>
     <span id="action">{{ post.related.action }} this</span>
   </div>
 
   <mat-divider *ngIf="post.related"></mat-divider>
   <mat-card-content class="feed-card-post-content" [ngStyle]="{'margin-top': post.related ? '20px' : '0px'}">
-    <div class="feed-card-post-content-actor">
+    <div class="feed-card-post-content-actor feed-padding">
       <div>
         <la-avatar size="60" img="assets/img/profile.png"></la-avatar>
       </div>
-      <div class="feed-card-post-content-actor-name">
-        <span class="mat-body-strong">{{ post.actor.name }}</span>
-        <span class="mat-caption-small">{{ post.actor.description }}</span>
+      <div>
+        <div class="feed-card-post-content-actor-name">
+          <span class="mat-body-strong">{{ post.actor.name }}</span>
+        </div>
+        <div class="feed-card-post-content-actor-description">
+          <span class="mat-small">{{ post.actor.description }}</span>
+        </div>
+        <div class="feed-card-post-content-actor-time">
+          <span class="mat-small">{{ post.actor.time }}</span>
+          <mat-icon>public</mat-icon>
+        </div>
       </div>
     </div>
+
+    <div class="feed-post-content-body feed-padding">
+      We are hiring engineers with demonstrable expertise working on Media Asset Management systems such as MPX/The
+      Platform, Brightcove, Anvato, etc. Experience leveraging cloud-first technologies for video services workflows at
+      AWS (Elemental, MediaPackage, MediaLive, Notification Services)
+    </div>
+
+    <div class="feed-post-content-media">
+      <img src="assets/img/post1.jpg" alt="">
+    </div>
+
+    <div class="feed-post-content-reactions feed-padding">
+      <img *ngFor="let reaction of post.reactions" src="assets/img/reactions/{{reaction}}.svg">
+      <mat-divider *ngIf="post.related"></mat-divider>
+    </div>
+
   </mat-card-content>
 </mat-card>
