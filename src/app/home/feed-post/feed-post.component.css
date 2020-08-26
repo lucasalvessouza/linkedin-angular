@@ -39,3 +39,11 @@
   color: #000;
 }
 
+.feed-card-post-content {
+  padding: 0px 10px;
+}
+
+.feed-card-post-divider {
+  padding-bottom: 10px;
+}
+

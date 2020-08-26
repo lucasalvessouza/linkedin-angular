@@ -9,6 +9,8 @@ export class AvatarComponent implements OnInit {
 
   @Input() size: string
   @Input() img: string
+  @Input() shadow: boolean
+
 
   constructor() { }
 
