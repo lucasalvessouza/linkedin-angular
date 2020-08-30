@@ -42,7 +42,30 @@
 
     <div class="feed-post-content-reactions feed-padding">
       <img *ngFor="let reaction of post.reactions" src="assets/img/reactions/{{reaction}}.svg">
-      <mat-divider *ngIf="post.related"></mat-divider>
+      <mat-divider></mat-divider>
+    </div>
+
+    <div class="feed-post-content-actions feed-padding">
+      <button class="button-post">
+        <div>
+          <mat-icon>thumb_up_alt</mat-icon>
+          <span>Like</span>
+        </div>
+      </button>
+
+      <button class="button-post">
+        <div>
+          <mat-icon>insert_comment</mat-icon>
+          <span>Comment</span>
+        </div>
+      </button>
+
+      <button class="button-post">
+        <div>
+          <mat-icon>share</mat-icon>
+          <span>Share</span>
+        </div>
+      </button>
     </div>
 
   </mat-card-content>

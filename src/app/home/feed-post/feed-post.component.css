@@ -94,3 +94,48 @@
 .feed-post-content-reactions {
   margin: 10px 0px;
 }
+
+.feed-post-content-reactions > mat-divider {
+  left: 17px;
+  width: 94%;
+  margin: 5px 0px;
+}
+
+.feed-post-content-actions {
+  height: 45px;
+}
+
+.button-post {
+  background: none!important;
+  border: none;
+  cursor: pointer;
+  padding: 5px!important;
+  margin-right: 10px;
+}
+
+.button-post:hover {
+  background-color: hsla(0,0%, 81.2%, .25)!important;
+  color: rgba(0,0,0,.75);
+  border-radius: 3px;
+}
+
+.button-post:focus {
+  outline: none!important;
+}
+
+.button-post > div {
+  display: flex;
+  font-size: 1rem;
+  font-family: inherit;
+  color: rgba(0,0,0,.6);
+}
+
+.button-post > div >mat-icon {
+  font-size: 1.4rem;
+  margin-right: 3px;
+}
+
+.button-post > div > span {
+  margin: auto;
+  font-weight: 600;
+}
