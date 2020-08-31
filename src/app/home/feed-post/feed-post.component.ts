@@ -9,9 +9,15 @@ export class FeedPostComponent implements OnInit {
 
   @Input() post
 
+  postReaction
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickReaction(reaction) {
+    this.postReaction = reaction
   }
 
 }

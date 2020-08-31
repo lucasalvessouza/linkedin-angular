@@ -130,12 +130,93 @@
   color: rgba(0,0,0,.6);
 }
 
-.button-post > div >mat-icon {
+.button-post > div > svg {
   font-size: 1.4rem;
+  margin-right: 3px;
+}
+
+.button-post > div > img {
+  width: 24px;
+  height: 24px;
   margin-right: 3px;
 }
 
 .button-post > div > span {
   margin: auto;
   font-weight: 600;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: -59px;
+  opacity: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 4px 6px rgba(0,0,0,.2);
+  border-radius: 300px;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+}
+
+.has-tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-button {
+  background: none!important;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  transition: top ease 0.5s;
+}
+
+
+.tooltip-button:focus {
+  outline: none;
+}
+
+.tooltip-button > img {
+  width: 30px;
+}
+
+.tooltip-button:hover{
+  top: -10px;
+}
+
+
+.love {
+  color: var(--warm-red-60,#e55800);
+}
+
+.celebrate {
+  color: var(--system-green-70,#2f7b15);
+}
+
+.interesting {
+  color: var(--amber-60,#9b8443);
+}
+
+.like {
+  color: #0073b1;
 }
