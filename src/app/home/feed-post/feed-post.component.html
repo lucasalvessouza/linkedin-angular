@@ -14,7 +14,7 @@
   <mat-card-content class="feed-card-post-content" [ngStyle]="{'margin-top': post.related ? '20px' : '0px'}">
     <div class="feed-card-post-content-actor feed-padding">
       <div>
-        <la-avatar size="60" img="assets/img/profile.png"></la-avatar>
+        <la-avatar size="60" img="{{ post.actor.avatar }}"></la-avatar>
       </div>
       <div>
         <div class="feed-card-post-content-actor-name">
@@ -31,13 +31,11 @@
     </div>
 
     <div class="feed-post-content-body feed-padding">
-      We are hiring engineers with demonstrable expertise working on Media Asset Management systems such as MPX/The
-      Platform, Brightcove, Anvato, etc. Experience leveraging cloud-first technologies for video services workflows at
-      AWS (Elemental, MediaPackage, MediaLive, Notification Services)
+      {{ post.text }}
     </div>
 
     <div class="feed-post-content-media">
-      <img src="assets/img/post1.jpg" alt="">
+      <img src="{{ post.image }}" alt="">
     </div>
 
     <div class="feed-post-content-reactions feed-padding">
